@@ -18,8 +18,8 @@ const Container = () => {
         });
     }
 
-    const deleteTask = id => {
-        const updateList = task.list.filter(value => value.id !== id );
+    const deleteTask = label => {
+        const updateList = task.list.filter(value => value.label !== label ); 
         setTask({
             ...task,
             list: updateList
